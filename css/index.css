@@ -101,13 +101,24 @@ img{
 }
 
 /*according to stack overflow there's a bug with safari with flex elements getting stretched*/
-.row{
+.thumbnail{
     display: flex;
     justify-content: center;
 }
 
-.row img{
-    max-width: 30%;
+.thumbnail img{
+    max-width: 25%; /*need to update depending on how many thumbnails there are*/
+    opacity: 0.6;
+}
+
+.thumbnail img:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+img.active-thumbnail{
+    opacity: 1;
 }
 
 .technologies-icons{
