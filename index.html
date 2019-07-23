@@ -5,80 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open%20Sans|Bree%20Serif" rel="stylesheet">
 </head>
 <body>
     <nav role="navigation"><ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="active-page"><a href="#about">About</a></li>
+        <li><a href="#projects-grid">Projects</a></li>
+        <li><a href="#contact-grid">Contact</a></li>
     </ul></nav>
      <main role="main">
-        <header>
-            <section class="intro-text"></section>
-            <section class="header-text">
-               <h2>header text</h2>
-            </section>
-        </header>
-        <section class="description">
+        <section id="about">
+            <p>intro</p>
+            <h2>About</h2>
             <p>about text</p>
         </section>
 
-        <section class="projects-grid">
-            <div class="project">
-                <h3>Basic Science Quiz</h3>
-                <p>This quiz was built to test users on basic science concepts and give more background into any concepts they may not remember.</p>
-                <div class="technologies-icons">
-                    <i class="fab fa-js-square fa-2x" alt="JavaScript icon"></i>
-                    <i class="fab fa-html5 fa-2x" alt="HTML icon"></i>
-                    <i class="fab fa-css3-alt fa-2x" alt="CSS icon"></i>
-                </div>
-                <div class="screenshots">
-                    <div class="full-size">
-                        <img src="images/quiz-screenshots/start.png" alt="start page screenshot">
+        <section id="projects">
+            <header>
+                <h2>Projects</h2>
+                <p>recent projects</p>
+            </header>
+            <section id="projects-grid">
+                <div class="project">
+                    <h3>Basic Science Quiz</h3>
+                    <p>This quiz was built to test users on basic science concepts and give more background into any concepts they may not remember.</p>
+                    <div class="technologies-icons">
+                        <i class="fab fa-js-square fa-2x" alt="JavaScript icon"></i>
+                        <i class="fab fa-html5 fa-2x" alt="HTML icon"></i>
+                        <i class="fab fa-css3-alt fa-2x" alt="CSS icon"></i>
                     </div>
-                    <div class="thumbnail">
-                        <img src="images/quiz-screenshots/start.png" alt="start page screenshot" class="active-thumbnail">
-                        <img src="images/quiz-screenshots/question.png" alt="question page screenshot">
-                        <img src="images/quiz-screenshots/correct-answer.png" alt="correct answer screenshot">
-                        <img src="images/quiz-screenshots/final-score.png" alt="final score screenshot">
+                    <div class="screenshots">
+                        <div class="full-size">
+                            <img src="images/quiz-screenshots/start.png" alt="start page screenshot">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/quiz-screenshots/start.png" alt="start page screenshot" class="active-thumbnail">
+                            <img src="images/quiz-screenshots/question.png" alt="question page screenshot">
+                            <img src="images/quiz-screenshots/correct-answer.png" alt="correct answer screenshot">
+                            <img src="images/quiz-screenshots/final-score.png" alt="final score screenshot">
+                        </div>
+                    </div>
+                    <p class="project-description"></p>
+                    <div class="links">
+                        <a href="https://omaiyea.github.io/quiz-app/" target="_blank">Live Demo</a>
+                        <p> | </p> <!--investigate doing this with css-->
+                        <a href="https://github.com/omaiyea/quiz-app" target="_blank">Repository</a>
                     </div>
                 </div>
-                <p class="project-description"></p>
-                <div class="links">
-                    <a href="https://omaiyea.github.io/quiz-app/" target="_blank">Live Demo</a>
-                    <p> | </p> <!--investigate doing this with css-->
-                    <a href="https://github.com/omaiyea/quiz-app" target="_blank">Repository</a>
-                </div>
-            </div>
-            <div class="project">
-                <h3>What Should I Cook?</h3>
-                <p>This app helps users to easily decide what to cook without overwhelming them with options. If they can't choose what to cook from a limited set of recipes, they are returned restaurants nearby or can choose to see more recipes.</p> 
-                <div class="technologies-icons">
-                    <i class="fab fa-js-square fa-2x" alt="JavaScript icon"></i>
-                    <i class="fab fa-html5 fa-2x" alt="HTML icon"></i>
-                    <i class="fab fa-css3-alt fa-2x" alt="CSS icon"></i>
-                </div>
-                <div class="screenshots">
-                    <div class="full-size">
-                        <img src="images/cook-app-screenshots/start-page.png" alt="start page screenshot">
+                <div class="project">
+                    <h3>What Should I Cook?</h3>
+                    <p>This app helps users to easily decide what to cook without overwhelming them with options. If they can't choose what to cook from a limited set of recipes, they are returned restaurants nearby or can choose to see more recipes.</p> 
+                    <div class="technologies-icons">
+                        <i class="fab fa-js-square fa-2x" alt="JavaScript icon"></i>
+                        <i class="fab fa-html5 fa-2x" alt="HTML icon"></i>
+                        <i class="fab fa-css3-alt fa-2x" alt="CSS icon"></i>
                     </div>
-                    <div class="thumbnail">
-                        <img src="images/cook-app-screenshots/start-page.png" alt="start page screenshot" class="active-thumbnail">
-                        <img src="images/cook-app-screenshots/food-preferences.png" alt="food preferences screenshot">
-                        <img src="images/cook-app-screenshots/recipe-page.png" alt="recipe page screenshot">
+                    <div class="screenshots">
+                        <div class="full-size">
+                            <img src="images/cook-app-screenshots/start-page.png" alt="start page screenshot">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/cook-app-screenshots/start-page.png" alt="start page screenshot" class="active-thumbnail">
+                            <img src="images/cook-app-screenshots/food-preferences.png" alt="food preferences screenshot">
+                            <img src="images/cook-app-screenshots/recipe-page.png" alt="recipe page screenshot">
+                        </div>
+                    </div>               
+                    <p class="project-description"></p>
+                    <div class="links">
+                        <a href="https://omaiyea.github.io/cook-app/" target="_blank">Live Demo</a>
+                        <p> | </p> <!--investigate doing this with css-->
+                        <a href="https://github.com/omaiyea/cook-app" target="_blank">Repository</a>
                     </div>
-                </div>               
-                <p class="project-description"></p>
-                <div class="links">
-                    <a href="https://omaiyea.github.io/cook-app/" target="_blank">Live Demo</a>
-                    <p> | </p> <!--investigate doing this with css-->
-                    <a href="https://github.com/omaiyea/cook-app" target="_blank">Repository</a>
                 </div>
-            </div>
+            </section>
         </section>
 
-        <section class="contact-grid">
+        <section id="contact-grid">
+            <h2>Contact</h2>
+            <p>contact info</p>
             <div class="contact">
                 <i class="fab fa-linkedin fa-4x"></i>
                 <h3>LinkedIn</h3>
