@@ -149,13 +149,15 @@ img.active-thumbnail{
     padding: 0px 3px;
 }
 
-#contact-grid { 
-    margin-bottom: 10px;
+#contact-grid{
+    width: 90%;
+    margin: 0px auto;
 }
 
-.contact i {
-    float: left;
-    padding-right: 15px;
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @media only screen and (min-width: 800px){
@@ -166,6 +168,9 @@ img.active-thumbnail{
     .project {
         flex-basis: 100%;
         max-width: 46%;
+    }
+    #contact-grid{
+        width: 50%;
     }
     body{
         padding: 0em 2em;
