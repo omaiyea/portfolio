@@ -29,12 +29,12 @@ p, main a {
 }
 
 b, a {
-    color: #6bada4;
+    color: #3a7a73;
     font-weight: bolder;
 }
 
 a:hover{
-    color: #428e84;
+    color: #254f4a;
     transition: 0.5s;
 }
 
@@ -164,7 +164,7 @@ img.active-thumbnail{
     #projects-grid {
         flex-direction: row;
         justify-content: space-around;
-    }    
+    }  
     .project {
         flex-basis: 100%;
         max-width: 46%;
@@ -173,6 +173,6 @@ img.active-thumbnail{
         width: 50%;
     }
     body{
-        padding: 0em 2em;
+        padding: 0em 3em;
     }
 }
