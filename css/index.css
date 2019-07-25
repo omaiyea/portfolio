@@ -42,19 +42,41 @@ h2, h3, nav a{
     text-transform: uppercase;
 }
 
+/*hide menu items by default*/
+ul{
+    display: none;
+}
+
+/*unless this class is turned on in the js file*/
+.display-menu{
+    display: block;
+    background-color: #9ed0c9;
+    margin-top: 1px;
+    padding-bottom: 2px;
+}
+
 nav a{
     color: black;
     text-decoration: none;
 }
 
-nav a:hover{
-    color: #eee;
-    transition: 0.5s;
+.display-menu li {
+    padding: 3px 0px;
+    list-style-type: none;
 }
 
-nav li.active-page{
-    border-bottom: 2px solid #eee;
-    margin-bottom: -2px;
+.display-icon{
+    display: block;
+}
+
+nav i{
+    padding: 13px 0px 0px 12px;
+}
+
+nav i:hover{
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 /***** nav bar styling *****/ 
@@ -69,19 +91,9 @@ nav{
     height: 60px;
 }
 
-nav ul{
-    float: right;
-    padding-right: 20px;
-}
-
-nav ul > li {
-    display: inline-block;
-    padding: 0px 10px;
-    vertical-align: bottom;    
-}
-
 main {
-    margin-top: 80px;
+    margin-top: 20px;
+    position: absolute;
 }
 
 /***** styling for elements that need to be centered *****/
@@ -95,7 +107,7 @@ img{
 }
 
 /***** styling for projects display *****/
-#projects-grid {
+#projects-grid{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,11 +173,41 @@ img.active-thumbnail{
 }
 
 @media only screen and (min-width: 800px){
-    #projects-grid {
+    nav ul{
+        float: right;
+        padding: 8px 20px 0px 0px;
+        display: block;
+    }
+    
+    /*display list items horizontally rather than verically for desktop to better use room*/
+    nav li{
+        display: inline-block;
+        padding: 0px 10px;
+    }
+
+    /*user will only be hovering/seeing active page with mouse aka larger screen*/
+    nav li.active-page{
+        border-bottom: 2px solid #eee;
+        padding-bottom: 5px;
+        margin-bottom: -5px; /*make projects jump down less when clicked*/
+    }
+    
+    nav a:hover{
+        color: #eee;
+        transition: 0.5s;
+    }
+
+    /*for some reason, hiding the icon doesn't work on its own*/
+    .display-icon{
+        display: none;
+    }
+
+    #projects-grid{
         flex-direction: row;
         justify-content: space-around;
     }  
-    .project {
+
+    .project{
         flex-basis: 100%;
         max-width: 46%;
     }

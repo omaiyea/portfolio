@@ -21,9 +21,17 @@ function setClass(selected, className){
     $(selected).siblings().removeClass(className);
 }
 
+function handleMenu(){
+    $('.display-icon').click(function(){
+        console.log('display menu');
+        $('ul').toggleClass('display-menu');
+    });
+}
+
 function handleApp(){
     renderFullScreenshot();
     setSection();
+    handleMenu();
 }
 
 $(handleApp);
