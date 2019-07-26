@@ -3,9 +3,6 @@
 }
 
 /****** stying for fonts faces, sizes, decorations, colors ******/
-body{
-    padding: 0em 0.75em;
-}
 
 h2, h3{
     font-family: 'Bree Serif', serif;
@@ -24,7 +21,7 @@ p, main a, nav{
     font-family: 'Open Sans', sans-serif;
 }
 
-p, main a {
+p, main a, .display-menu li {
     font-size: 20px;
 }
 
@@ -94,6 +91,7 @@ nav{
 main {
     margin-top: 20px;
     position: absolute;
+    padding: 0em 1.3em 0em 0.8em;
 }
 
 /***** styling for elements that need to be centered *****/
@@ -139,16 +137,6 @@ img{
 
 img.active-thumbnail{
     opacity: 1;
-}
-
-.technologies-icons{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-
-.technologies-icons i{
-    padding: 0px 5px;
 }
 
 .links{
@@ -214,7 +202,7 @@ img.active-thumbnail{
     #contact-grid{
         width: 50%;
     }
-    body{
-        padding: 0em 3em;
+    main {
+        padding: 0em 1.5em 0em 1.5em;
     }
 }
