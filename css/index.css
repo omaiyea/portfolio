@@ -86,6 +86,9 @@ nav{
     position: fixed;
     z-index: 10;
     height: 60px;
+    /*get rid of 'shaking' on mobile*/
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 
 main {
