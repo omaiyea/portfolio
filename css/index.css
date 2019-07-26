@@ -79,8 +79,10 @@ nav i:hover{
 /***** nav bar styling *****/ 
 nav{
     background-color: #9ed0c9;
+     /*zeroing out the default margins with top/etc causes the nav bar to jump*/
     margin: 0;
     padding: 0;
+    /*but there was still whitespace even when using the above to remove it so needed to add these two*/
     top: 0;
     left: 0;
     position: fixed;
