@@ -59,8 +59,8 @@ nav a{/**, #contacts a{**/
     /*but there was still whitespace even when using the above to remove it so needed to add these two*/
     top: 0;
     left: 0;
+    height: 100vh;
     position: absolute;
-    height: 700px;
     width: 100%;
     z-index: 0.5;
 }
@@ -135,8 +135,9 @@ ul, nav{
 }
 
 main{
-    padding: 700px 0px 0px 0px;
+    padding: 800px 0px 0px 0px;
     margin: 0;
+    position: absolute;
 }
 /***** styling for elements that need to be centered *****/
 #projects-grid h3{
