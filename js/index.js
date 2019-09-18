@@ -21,17 +21,30 @@ function setClass(selected, className){
     $(selected).siblings().removeClass(className);
 }
 
-function handleMenu(){
+function handleMobileMenu(){
     $('.display-icon').click(function(){
         console.log('display menu');
         $('ul').toggleClass('display-menu');
     });
 }
 
+//show the menu when user scrolls down far enough
+function showMenuScroll(){
+    $(document).scroll(function(){
+        var y = $(this).scrollTop();
+        if(y > 400){ //make start to appear sooner than header ends
+            $('nav').fadeIn();
+        }else{
+            $('nav').fadeOut();
+        }
+    });
+}
+
 function handleApp(){
     renderFullScreenshot();
     setSection();
-    handleMenu();
+    handleMobileMenu();
+    showMenuScroll();
 }
 
 $(handleApp);

@@ -3,7 +3,6 @@
 }
 
 /****** stying for fonts faces, sizes, decorations, colors ******/
-
 h2, h3{
     font-family: 'Open Sans', serif;
     font-weight: 700;
@@ -18,44 +17,32 @@ h3{
     font-size: 32px;
 }
 
-p, main a, nav{
+p, main a, nav, #contacts a{
     font-family: 'Nunito', sans-serif;
-    color: #424243;
-}
-
-p, main a, .display-menu li {
     font-size: 20px;
 }
 
-b, a {
+p {
+    color: #424243;
+}
+
+
+main a {
     color: #3a7a73;
     font-weight: bolder;
 }
 
-a:hover{
+main a:hover{
     color: #254f4a;
     transition: 0.5s;
 }
 
-h3, nav a{
+h3, nav a, #contacts a{
     text-transform: uppercase;
 }
 
-/*hide menu items by default*/
-ul{
-    display: none;
-}
-
-/*unless this class is turned on in the js file*/
-.display-menu{
-    display: block;
-    background-color: #9ed0c9;
-    margin-top: 1px;
-    padding-bottom: 2px;
-}
-
-nav a{
-    color: black;
+nav a{/**, #contacts a{**/
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -64,42 +51,93 @@ nav a{
     list-style-type: none;
 }
 
-/*hamburger icon styles */
-.display-icon{
-    display: block;
-}
-
-nav i{
-    padding: 32px 0px 0px 12px;
-}
-
-nav i:hover{
-    color: white;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-/***** nav bar styling *****/ 
-nav{
-    background-color: #9ed0c9;
-     /*zeroing out the default margins with top/etc causes the nav bar to jump*/
+/**** initial header styling ****/
+#head{
+    background-color: #001F3F;     /*zeroing out the default margins with top/etc causes the nav bar to jump*/
     margin: 0;
     padding: 0;
     /*but there was still whitespace even when using the above to remove it so needed to add these two*/
     top: 0;
     left: 0;
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    z-index: 1;
-}
-
-main {
-    margin-top: 20px;
     position: absolute;
-    padding: 2.8em 1.3em 0em 0.8em;
+    height: 700px;
+    width: 100%;
+    z-index: 0.5;
 }
 
+#head h2{
+    color: white;
+    margin: 275px 0px 0px 50px;
+}
+
+#head p{
+    color: white;
+    margin-left: 50px;
+}
+
+/***** shared nav bar and footer bar styling styling *****/ 
+nav{/**, #contacts{ todo: fix footer**/ 
+    background-color: #001F3F;
+    width: 100%;
+    /*zeroing out the default margins with top/etc causes the nav bar to jump*/
+    margin: 0;
+    padding: 0;
+    /*but there was still whitespace even when using the above to remove it so needed to add these two*/
+    left: 0;
+    right: 0;
+}
+
+.contacts-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 11px;
+}
+
+/*** fix footer #contacts{
+    bottom: 0;
+    position: fixed;
+    height: 50px;
+    margin-top: 50px;
+}***/
+
+/***** nav bar styling *****/ 
+nav{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 100px;
+}
+
+/*hamburger icon container styles */
+nav i{
+    padding: 32px 0px 0px 12px;
+    display: block;
+    color: #ffffff;
+}
+
+nav i:hover{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*hide menu items by default for mobile*/
+ul{
+    display: none;
+}
+
+/*unless this class is turned on in the js file*/
+.display-menu{
+    display: block;
+    background-color: #001F3F;
+    margin-top: 1px;
+    padding: 15px 0px 15px 15px;
+}
+
+main{
+    padding: 700px 0px 0px 0px;
+    margin: 0;
+}
 /***** styling for elements that need to be centered *****/
 #projects-grid h3{
     text-align: center; 
@@ -156,19 +194,19 @@ img.active-thumbnail{
 }
 
 @media only screen and (min-width: 800px){
+
     nav ul{
         text-align: center;
         padding: 22px 30px 0px 0px;
         display: block;
     }
     
-    /*display list items horizontally rather than verically for desktop to better use room*/
+    /*display menu items horizontally rather than verically for desktop to better use room*/
     nav li{
         display: inline-block;
         padding: 0px 10px;
     }
     
-
     /*user will only be hovering/seeing active page with mouse aka larger screen*/
     nav li.active-page{
         border-bottom: 2px solid #eee;
@@ -186,6 +224,15 @@ img.active-thumbnail{
         display: none;
     }
 
+    /*** add padding for each section ***/
+    #about{
+        padding: 0em 5em;
+    }
+
+    #projects, #resume, #contacts{
+        padding: 0em 3em;
+    }
+
     #projects-grid{
         flex-direction: row;
         justify-content: space-around;
@@ -194,9 +241,5 @@ img.active-thumbnail{
     .project{
         flex-basis: 100%;
         max-width: 30%;
-    }
-
-    main {
-        padding: 3em 3em 0em 3em;
     }
 }
