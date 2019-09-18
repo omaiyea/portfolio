@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Bree%20Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open%20Sans" rel="stylesheet">
 </head>
 <body>
@@ -17,16 +17,17 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects-grid">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
             <li><a href="#contact-grid">Contact</a></li>
         </ul>
     </nav>
      <main role="main">
         <section id="about">
-            <h2>About</h2>
-            <p>Hi, my name is Angelica!</p>
-            <p>Currently, I'm a student in Thinkful's <b>Web Development</b> program.</p>
-            <p>I've always been excited about code-- whether it's <b>computational research</b> in Python or Perl, <b>data structures</b> and <b>algorithms</b> classes in C++, or making <b>websites with pixelated gifs</b> in the early 2000s with HTML/CSS. I also love working in teams to build awesome projects!</p>
-            <p>My not nerdy passions include traveling abroad, eating good food, and watching bad high school drama TV shows.</p>
+            <h2>Hi, I'm Angelica!</h2>
+            <p>I'm a problem solver, people lover, and perpetual learner.</p>
+            <p>Currently, I'm a student in Thinkful's <b>Full Stack Development</b> program, and before that, I worked in <b>Technical Program Management</b> for almost 5 years.</p>
+            <p>I've always been excited about code-- whether it's <b>bioinformatics research</b> in Python or Perl, <b>data structures</b> and <b>algorithms</b> classes in C++, or making <b>websites with pixelated gifs</b> in the early 2000s with HTML/CSS.</p>
+            <p>My other hobbies include <b>traveling abroad</b> (and writing in my travel blog), <b>eating good food</b> (and taking pictures of it for my food Instagram), and <b>reading books</b> (currently, I'm reading The Silk Road: A New History of the World).</p>
         </section>
 
         <section id="projects">
@@ -79,19 +80,50 @@
                         <a href="https://github.com/omaiyea/cook-app" target="_blank">Repository</a>
                     </div>
                 </div>
+                <div class="project">
+                    <h3>Noteful</h3>
+                    <p>This app lets users store and manage their notes, which are stored on an external server.</p> 
+                    <p>I wrote it as part of a project to learn React, but I'm happy with how it came out, so I'm including it here too.</p>
+                    <p>Note that some setup is required before doing the live demo! See the README in the repository link.</p>
+                    <p><b>Technologies Used: </b> React.js, Enzyme, HTML, CSS</p>
+                    <div class="screenshots">
+                        <div class="full-size">
+                            <img src="images/noteful-screenshots/notes-view.png" alt="start page screenshot">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/noteful-screenshots/notes-view.png" alt="start page screenshot" class="active-thumbnail">
+                            <img src="images/noteful-screenshots/add-folder.png" alt="add folder screenshot">
+                            <img src="images/noteful-screenshots/add-note.png" alt="add note screenshot">
+                            <img src="images/noteful-screenshots/note-details.png" alt="note details screenshot">
+                        </div>
+                    </div>               
+                    <p class="project-description"></p>
+                    <div class="links">
+                        <a href="https://omaiyea.github.io/cook-app/" target="_blank">Live Demo</a>
+                        <p> | </p> <!--investigate doing this with css-->
+                        <a href="https://github.com/omaiyea/cook-app" target="_blank">Repository</a>
+                    </div>
+                </div>
             </section>
         </section>
 
-        <section id="contact-grid">
+        <section id="resume">
+            <header>
+                <h2>Resume</h2>
+            </header>
+            <p>TBD</p>
+        </section>
+
+        <footer id="contact-grid">
             <header>
                 <h2>Contact Me</h2>
             </header>
             <div class="contacts"> 
-                <a href="https://www.linkedin.com/in/angelica-omaiye" target="_blank"><i class="fab fa-linkedin fa-3x" aria-label="linkedin icon"></i><p>LinkedIn </p></a>
-                <a href="https://github.com/omaiyea/" target="_blank"><i class="fab fa-github-square fa-3x" aria-label="github icon"></i><p>GitHub </p></a>
-                <a href="mailto:omaiyea@gmail.com" target="_blank"><i class="fas fa-envelope fa-3x" aria-label="email icon"></i><p>Email </p></a>
+                <p>I'm not active on social media, but you can read more about me on <a href="https://www.linkedin.com/in/angelica-omaiye" target="_blank">LinkedIn</a>,
+                  see what I'm up to on <a href="https://github.com/omaiyea/" target="_blank">GitHub</a>,
+                  or reach out over <a href="mailto:omaiyea@gmail.com" target="_blank">email.</a></p>
             </div>
-        </section>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="js/index.js"></script>
     </main>

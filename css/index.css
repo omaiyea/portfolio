@@ -5,8 +5,9 @@
 /****** stying for fonts faces, sizes, decorations, colors ******/
 
 h2, h3{
-    font-family: 'Bree Serif', serif;
-    letter-spacing: 2px;
+    font-family: 'Open Sans', serif;
+    font-weight: 700;
+    color: #424243;
 }
 
 h2{
@@ -18,7 +19,8 @@ h3{
 }
 
 p, main a, nav{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    color: #424243;
 }
 
 p, main a, .display-menu li {
@@ -35,7 +37,7 @@ a:hover{
     transition: 0.5s;
 }
 
-h2, h3, nav a{
+h3, nav a{
     text-transform: uppercase;
 }
 
@@ -58,16 +60,17 @@ nav a{
 }
 
 .display-menu li {
-    padding: 3px 0px;
+    padding: 10px 0px;
     list-style-type: none;
 }
 
+/*hamburger icon styles */
 .display-icon{
     display: block;
 }
 
 nav i{
-    padding: 13px 0px 0px 12px;
+    padding: 32px 0px 0px 12px;
 }
 
 nav i:hover{
@@ -86,7 +89,7 @@ nav{
     top: 0;
     left: 0;
     position: fixed;
-    height: 60px;
+    height: 100px;
     width: 100%;
     z-index: 1;
 }
@@ -94,11 +97,11 @@ nav{
 main {
     margin-top: 20px;
     position: absolute;
-    padding: 0em 1.3em 0em 0.8em;
+    padding: 2.8em 1.3em 0em 0.8em;
 }
 
 /***** styling for elements that need to be centered *****/
-h2, #projects-grid h3{
+#projects-grid h3{
     text-align: center; 
 } 
 
@@ -128,7 +131,7 @@ img{
 }
 
 .thumbnail img{
-    max-width: 25%; /*need to update depending on how many thumbnails there are*/
+    max-width: 20%; /*need to update depending on how many thumbnails there are*/
     opacity: 0.6;
 }
 
@@ -152,21 +155,10 @@ img.active-thumbnail{
     padding: 0px 3px;
 }
 
-#contact-grid{
-    width: 90%;
-    margin: 0px auto;
-}
-
-.contacts{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 @media only screen and (min-width: 800px){
     nav ul{
-        float: right;
-        padding: 8px 20px 0px 0px;
+        text-align: center;
+        padding: 22px 30px 0px 0px;
         display: block;
     }
     
@@ -175,6 +167,7 @@ img.active-thumbnail{
         display: inline-block;
         padding: 0px 10px;
     }
+    
 
     /*user will only be hovering/seeing active page with mouse aka larger screen*/
     nav li.active-page{
@@ -200,12 +193,10 @@ img.active-thumbnail{
 
     .project{
         flex-basis: 100%;
-        max-width: 46%;
+        max-width: 30%;
     }
-    #contact-grid{
-        width: 50%;
-    }
+
     main {
-        padding: 0em 1.5em 0em 1.5em;
+        padding: 3em 3em 0em 3em;
     }
 }
