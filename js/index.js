@@ -8,8 +8,10 @@ function renderFullScreenshot(){
 }
 
 //indicate to user which section they are on
+/// issue: doesn't work if user scrolls to section or clicks button to section, only if they click nav menu
 function setSection(){
     $('nav').on('click', 'li', function(){
+        console.log(this);
         setClass(this, 'active-page')
     });
 }
@@ -40,11 +42,21 @@ function showMenuScroll(){
     });
 }
 
+function handleButtonClick(){
+    $('button').click(function(){
+        let buttonId = `#` + this.id.substr(0, this.id.indexOf('-'));
+        $('html, body').animate({
+            scrollTop: $(buttonId).offset().top
+        }, 900);
+    });
+}
+
 function handleApp(){
     renderFullScreenshot();
     setSection();
     handleMobileMenu();
     showMenuScroll();
+    handleButtonClick();
 }
 
 $(handleApp);

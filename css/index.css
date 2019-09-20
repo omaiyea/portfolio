@@ -10,25 +10,44 @@ h2, h3{
 }
 
 h2{
-    font-size: 48px;
+    font-size: 3em;
+}
+
+section h2{
+    text-align: center;
+    font-weight: 900;
 }
 
 h3{
-    font-size: 32px;
+    font-size: 2em;
 }
 
-p, main a, nav, #contacts a{
+p, main a, button{
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
+}
+
+nav{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
 }
 
 p {
     color: #424243;
 }
 
+footer p{
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+}
+
+#about p, #contact p{
+    padding: 0px 0.5em;
+}
 
 main a {
-    color: #3a7a73;
+    color: #014082;
     font-weight: bolder;
 }
 
@@ -37,11 +56,15 @@ main a:hover{
     transition: 0.5s;
 }
 
-h3, nav a, #contacts a{
+nav a{
     text-transform: uppercase;
 }
 
-nav a{/**, #contacts a{**/
+b{
+    color: #014082;
+}
+
+nav a{
     color: #ffffff;
     text-decoration: none;
 }
@@ -49,6 +72,10 @@ nav a{/**, #contacts a{**/
 .display-menu li {
     padding: 10px 0px;
     list-style-type: none;
+}
+
+i {
+    color: #014082;
 }
 
 /**** initial header styling ****/
@@ -65,18 +92,49 @@ nav a{/**, #contacts a{**/
     z-index: 0.5;
 }
 
-#head h2{
-    color: white;
-    margin: 250px 50px 10px 50px;
+#head h2, #head p, button{
+    color: #eee;
+    margin-left: 50px;
 }
 
-#head p{
-    color: white;
-    margin: 0px 50px;
+#head h2 {
+    margin-top: 250px;
 }
 
-/***** shared nav bar and footer bar styling styling *****/ 
-nav{/**, #contacts{ todo: fix footer**/ 
+#head h2, #head p{
+    margin-right: 50px 
+}
+
+button{
+    background-color: #001F3F;
+    border: 1px solid #eee;
+    padding: 0.5em 1.5em;
+    margin-top: 10px;
+    max-width: 150px;
+}
+
+button:hover{
+    cursor: pointer;
+    color: darkgrey;
+    border: 1px solid darkgrey;
+    transition: 0.5s;
+}
+
+#nav-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+/*** footer styling***/
+footer{
+    background-color: #001F3F;
+    color: white;
+    margin: 0px -10px -20px -10px;
+}
+
+/*** nav bar styling  ***/
+nav{
     background-color: #001F3F;
     width: 100%;
     /*zeroing out the default margins with top/etc causes the nav bar to jump*/
@@ -85,24 +143,6 @@ nav{/**, #contacts{ todo: fix footer**/
     /*but there was still whitespace even when using the above to remove it so needed to add these two*/
     left: 0;
     right: 0;
-}
-
-.contacts-grid{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 11px;
-}
-
-/*** fix footer #contacts{
-    bottom: 0;
-    position: fixed;
-    height: 50px;
-    margin-top: 50px;
-}***/
-
-/***** nav bar styling *****/ 
-nav{
     position: fixed;
     z-index: 1;
     top: 0;
@@ -135,9 +175,19 @@ ul, nav{
 }
 
 main{
-    padding: 800px 0px 0px 0px;
+    padding: 740px 0px 0px 0px; /**different browsers display the top height differently....**/
     margin: 0;
-    position: absolute;
+}
+
+/*** styling for about section ***/
+.experiences{
+    margin: 0em 2em;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /***** styling for elements that need to be centered *****/
 #projects-grid h3{
@@ -195,15 +245,27 @@ img.active-thumbnail{
 }
 
 /***** padding on mobile ****/
-#about{
-    padding: 0px 3em;
-}
-
-#projects, #resume, #contacts{
+#projects, #resume{
     padding: 0em 2em;
 }
 
+/**** more padding for the text sections ****/
+#about, #contact{
+    padding: 0em 2em 2em 2em;
+}
+
+/*** alternate colors ***/
+#contact{
+    background-color: #eee;
+    padding-top: 2em;
+    margin: 0px -6px;
+}
+
 @media only screen and (min-width: 800px){
+
+    #nav-buttons{
+        flex-direction: row;
+    }
 
     nav ul{
         text-align: center;
@@ -235,21 +297,43 @@ img.active-thumbnail{
     }
 
     /*** add padding for each section ***/
-    #about{
-        padding: 0em 5em;
+    #about p{
+        padding: 0em 2em;
     }
 
-    #projects, #resume, #contacts{
+    #projects{
         padding: 0em 3em;
     }
+
+    #about{
+        padding: 0em 3em;
+        margin: 0;
+    }
+
+    #contact{
+        padding: 1em 3em;
+        margin: 0px -8px;
+    }
+
+    .experiences{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .experience{
+        width: 33%;
+    }
+
 
     #projects-grid{
         flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
     }  
 
     .project{
         flex-basis: 100%;
-        max-width: 30%;
+        max-width: 38%;
     }
 }
