@@ -250,14 +250,14 @@ img.active-thumbnail{
 }
 
 /**** more padding for the text sections ****/
-#about, #contact{
+#about{
     padding: 0em 2em 2em 2em;
 }
 
 /*** alternate colors ***/
 #contact{
     background-color: #eee;
-    padding-top: 2em;
+    padding: 2em 2em;
     margin: 0px -6px;
 }
 
@@ -311,8 +311,7 @@ img.active-thumbnail{
     }
 
     #contact{
-        padding: 1em 3em;
-        margin: 0px -8px;
+        padding: 1em 5em;
     }
 
     .experiences{
