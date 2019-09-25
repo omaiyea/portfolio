@@ -39,7 +39,7 @@ p {
 footer p{
     font-size: 15px;
     color: white;
-    padding: 15px;
+    padding: 22px 0px 0px 20px;
 }
 
 #about p, #contact p{
@@ -130,7 +130,7 @@ button:hover{
 footer{
     background-color: #001F3F;
     color: white;
-    margin: 0px -10px -20px -10px;
+    padding-bottom: 10px;
 }
 
 /*** nav bar styling  ***/
@@ -177,6 +177,10 @@ ul, nav{
 main{
     padding: 740px 0px 0px 0px; /**different browsers display the top height differently....**/
     margin: 0;
+}
+
+body{
+    margin: 0px;
 }
 
 /*** styling for about section ***/
@@ -258,7 +262,6 @@ img.active-thumbnail{
 #contact{
     background-color: #eee;
     padding: 2em 2em;
-    margin: 0px -6px;
 }
 
 @media only screen and (min-width: 800px){
