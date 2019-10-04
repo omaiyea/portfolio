@@ -53,7 +53,7 @@ function handleButtonClick(){
 
 function handleApp(){
     renderFullScreenshot();
-    setSection();
+  //  setSection(); //bug
     handleMobileMenu();
     showMenuScroll();
     handleButtonClick();

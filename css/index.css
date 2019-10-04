@@ -13,7 +13,7 @@ h2{
     font-size: 3em;
 }
 
-section h2{
+section h2, section h3{
     text-align: center;
     font-weight: 900;
 }
@@ -44,6 +44,7 @@ footer p{
 
 #about p, #contact p{
     padding: 0px 0.5em;
+    line-height: 1.5;
 }
 
 main a {
@@ -183,21 +184,7 @@ body{
     margin: 0px;
 }
 
-/*** styling for about section ***/
-.experiences{
-    margin: 0em 2em;
-}
-
-.experience{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 /***** styling for elements that need to be centered *****/
-#projects-grid h3{
-    text-align: center; 
-} 
-
 img{
     margin-left: auto;
     margin-right: auto;
@@ -258,6 +245,19 @@ img.active-thumbnail{
     padding: 0em 2em 2em 2em;
 }
 
+#skills{
+    margin-bottom: 50px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icons i{
+    padding: 10px;
+}
+
 /*** alternate colors ***/
 #contact{
     background-color: #eee;
@@ -301,7 +301,7 @@ img.active-thumbnail{
 
     /*** add padding for each section ***/
     #about p{
-        padding: 0em 2em;
+        padding: 0em 5em;
     }
 
     #projects{
@@ -316,17 +316,6 @@ img.active-thumbnail{
     #contact{
         padding: 1em 5em;
     }
-
-    .experiences{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .experience{
-        width: 33%;
-    }
-
 
     #projects-grid{
         flex-direction: row;
