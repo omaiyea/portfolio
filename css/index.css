@@ -176,7 +176,7 @@ ul, nav{
 }
 
 main{
-    padding: 740px 0px 0px 0px; /**different browsers display the top height differently....**/
+    padding: 770px 0px 0px 0px; /**different browsers display the top height differently....**/
     margin: 0;
 }
 
@@ -252,10 +252,12 @@ img.active-thumbnail{
 .icons{
     display: flex;
     justify-content: center;
+    font-size: 2vw;
 }
 
 .icons i{
     padding: 10px;
+    flex-shrink: 1;
 }
 
 /*** alternate colors ***/
@@ -297,6 +299,12 @@ img.active-thumbnail{
     /*for some reason, hiding the icon doesn't work on its own*/
     .display-icon{
         display: none;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        font-size: 1vw;
     }
 
     /*** add padding for each section ***/
