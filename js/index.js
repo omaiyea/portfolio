@@ -1,31 +1,6 @@
-//display clicked screenshot at full size
-function renderFullScreenshot(){
-    $('#projects-grid').on('click', 'img', function(){
-        setClass(this, 'active-thumbnail');
-        $(this).parent().prev().children().attr('src', $(this).attr('src'));
-        $(this).parent().prev().children().attr('alt', $(this).attr('alt'));
-     });
-}
-
-//indicate to user which section they are on
-/// issue: doesn't work if user scrolls to section or clicks button to section, only if they click nav menu
-function setSection(){
-    $('nav').on('click', 'li', function(){
-        console.log(this);
-        setClass(this, 'active-page')
-    });
-}
-
-//update styling for elements that can only have one active sibling
-//for example, enlarged thumbnails, current page
-function setClass(selected, className){
-    $(selected).addClass(className);
-    $(selected).siblings().removeClass(className);
-}
-
+//show menu on mobile
 function handleMobileMenu(){
     $('.display-icon').click(function(){
-        console.log('display menu');
         $('ul').toggleClass('display-menu');
     });
 }
@@ -51,12 +26,38 @@ function handleButtonClick(){
     });
 }
 
+//shows/hides answers for question that user cliks
+function toggleQuestion(){
+    $('.question').click(function(){
+        $(this).find('.answer').toggleClass('hidden');
+    })
+}
+
+//fill skills bar on scroll
+function showSkillsScroll(){
+    var skillsDiv = $('#skills');
+
+    $(window).on('scroll', function(){
+        var winT = $(window).scrollTop(),
+          winH = $(window).height(),
+          skillsT = skillsDiv.offset().top;
+      if(winT + winH  > skillsT){
+          $('.bar-container').each(function(){
+              console.log($(this))
+            $(this).find('.bar').animate({
+                width:$(this).attr('data-percent')
+            },6000);
+        });
+      }
+    });    
+}
+
 function handleApp(){
-    renderFullScreenshot();
-  //  setSection(); //bug
     handleMobileMenu();
     showMenuScroll();
     handleButtonClick();
+    toggleQuestion();
+    showSkillsScroll();
 }
 
 $(handleApp);

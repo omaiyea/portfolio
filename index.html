@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Angelica Portfolio</title>
+    <title>Angelica Omaiye | Product Manager</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Angelica Omaiye is a San Diego based Product Manager, Agile Enthusiast, and Inclusive Team Leader.">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
@@ -11,148 +12,206 @@
 </head>
 <body>
     <header id="head">
-        <h2>Hi, I'm Angelica!</h2>
-        <p>I'm a problem solver, people lover, and perpetual learner.</p>
+        <h2>Angelica Omaiye</h2>
+        <p>Product Manager, Agile Enthusiast, Inclusive Team Leader</p>
         <section id="nav-buttons">
             <button id="about-button">About</button>
-            <button id="projects-button">Projects</button>
-            <button id="contact-button">Contact</button>
+            <button id="skills-button">Work</button>
         </section>
     </header>
+
    <nav role="navigation" class="hidden">
         <div class="display-icon">
             <i class="fa fa-bars fa-2x"></i>
         </div>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects-grid">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Work</a></li>
         </ul>
     </nav>
 
-     <main role="main">
-
+    <main role="main">
 
     <section id="about">
-            <header>
-                <h2>About</h2>
-            </header>  
-            <p>Currently, I'm a student in Thinkful's <b>Full Stack Development</b> program, building mobile-first applications using the MERN stack and learning from senior developers. I love the logic, problem solving, and constant learning that comes with development!</p>
-            <p>Before that, I worked in <b>Software Program Management</b> for almost 5 years, collaborating with clients, developers, and sales/marketing to get features & products built, with goals to drive new customers and delight existing ones. I'm naturally emphatic and love bringing groups together and building openness and trust, which helped a ton in this position.</p> 
-            <p>And even before that, I've dabbled in bioinformatics research with Awk, Perl, and Python, database management and data analysis with SQL, and data structures and object oriented programming in C++. <i>Remember when I said I like learning and code? :P</i></p>
-            <p>My other hobbies include traveling (and writing in my travel blog), eating good food (and taking food pictures for my food Instagram), and reading books (right now, I'm reading Eloquent JavaScript).</p>
-    </section>
-
-    <section id="skills">
-        <header><h3>Technologies</h3></header>
-        <div class="icons">
-            <i aria-hidden="true" class="fab fa-html5 fa-4x" title="html icon"></i>
-            <i aria-hidden="true" class="fab fa-css3-alt fa-4x" title="css icon"></i>
-            <i aria-hidden="true" class="fab fa-js-square fa-4x" title="javascript icon"></i>
-            <i aria-hidden="true" class="fab fa-react fa-4x" title="react icon"></i>
-            <i aria-hidden="true" class="fab fa-node-js fa-4x" title="node icon"></i>
-            <i aria-hidden="true" class="fas fa-database fa-4x" title="database icon for sql"></i>
-        </div>
-    </section>
-
-    <section id="contact">
         <header>
-            <h2>Contact</h2>
-        </header> 
-        <div class="contacts-grid"> 
-            <p>I'm not active on social media, but you can
-            see what I'm up to on <a href="https://github.com/omaiyea/" target="_blank">GitHub</a>,
-            follow my problem solving journey on <a href="https://www.hackerrank.com/omaiyea" target="_blank">Hacker Rank</a>,
-            read more about me on <a href="https://www.linkedin.com/in/angelica-omaiye" target="_blank">LinkedIn</a>,
-            or reach out to me over <a href="mailto:omaiyea@gmail.com" target="_blank">e-mail</a>.
+            <h2>About</h2>
+        </header>
+                
+        <div id="intro">
+            <p>Hi, I'm Angelica!</p>
+            <p>I'm currently a Product Manager for Mitek Systems, building digital identity verification products for highly regulated markets. Before that, I worked as a Program Manager for LabKey Software, providing open source data management software for scientific researchers.</p>
+            <p>I love the dynamic nature of both product management and technology. Naturally, I'm drawn to finding answers to the question "why", analyzing trade-offs, and rallying people to a shared vision. I'm most passionate about products focused on compliance, trust and security, and I thrive in environments that value being a good human being and doing good for the rest of the world.</p>
+
+            <div id="questions">
+                <div class="question">
+                    <h5>What did you do before PM? <i class="fas fa-angle-down rotate-icon"></i></h5>
+                    <p class="answer hidden" aria-label="Answer to question above">Between fun/school/work, I've dabbled in fields including: web development, database management, SEO/SEM, quality & regulatory, chemistry, and computational research (hey, I love learning new things). While diverse, these experiences have all stimulated my problem solving, analytical, and data-informed side and bring a unique perspective to product.</p>
+                </div>
+
+                <div class="question">
+                    <h5>What do you do for fun? <i class="fas fa-angle-down rotate-icon"></i></h5>
+                    <p class="answer hidden" aria-label="Answer to question above">I love being in nature, traveling abroad, trying new foods, coding, reading books, practicing new skills, and writing. I used to run a travel blog with 50k+ sessions. I currently run a food Instagram... which does not have an audience... but it's fun :).</p>
+                </div>
+
+                <div class="question">
+                    <h5>I want to know your MBTI result. <i class="fas fa-angle-down rotate-icon"></i></h5>
+                    <p class="answer hidden" aria-label="Answer to question above">I either get INTP ("The Architect") or ENTP ("The Visionary"), depending on the day. Today, the ENTP description resonates more: <br><br>
+                        "ENTPs are inspired innovators, motivated to find new solutions to intellectually challenging problems. They are curious and clever, and seek to comprehend the people, systems, and principles that surround them. [Visionaries are] open-minded and unconventional." (from <a href="https://www.truity.com/personality-type/ENTP" target="_blank">Truity</a>)</p>
+                </div>
+            </div>
         </div>
+
+        <!-- both of the below are from w3-->
+        <div id="skills">
+            <h2>Skills</h2>
+            <div class="sub-div">
+               <p>Disclaimer: These %s are completely relative based on my feelings and are not backed by anything objective.</p>
+            </div>
+
+                <h3>Product Management Skills</h3>
+
+                <div class="skill">
+                    <h4>Customer Discovery</h4>
+                    <div class="bar-container" data-percent="73%">
+                      <p class="bar">73%</p>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Product Strategy</h4>
+                    <div class="bar-container" data-percent="70%">
+                      <p class="bar">70%</p>
+                    </div>
+                </div>                
+
+                <div class="skill">
+                    <h4>Data Analysis</h4>
+                    <div class="bar-container" data-percent="79%">
+                        <p class="bar">79%</p>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>User Experience</h4>
+                    <div class="bar-container" data-percent="65%">
+                        <p class="bar">65%</p>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Project Management</h4>
+                    <div class="bar-container" data-percent="70%">
+                        <p class="bar">70%</p>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Product Marketing</h4>
+                    <div class="bar-container" data-percent="15%">
+                        <p class="bar">15%</p>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Stakeholder Management</h4>
+                    <div class="bar-container" data-percent="75%">
+                        <p class="bar">75%</p>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Product Execution</h4>
+                    <div class="bar-container" data-percent="82%">
+                        <p class="bar">82%</p>
+                    </div>  
+                </div>
+        </div>
+
+        <h3>"Soft" Skills</h3>
+        <div class="skill">
+            <h4>Empathy</h4>
+            <div class="bar-container" data-percent="90%">
+                <p class="bar">90%</p>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <h4>Teamwork</h4>
+            <div class="bar-container" data-percent="75%">
+                <p class="bar">75%</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h4>Communication</h4>
+            <div class="bar-container" data-percent="75%">
+                <p class="bar">75%</p>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h4>Emotional Intelligence</h4>
+            <div class="bar-container" data-percent="89%">
+                <p class="bar">89%</p>
+            </div>
+        </div>
+
     </section>
 
-        <section id="projects">
-            <header>
-                <h2>Projects</h2>
-                <p>These are some recent development projects that I've completed.</p>
-            </header>
-            <section id="projects-grid">
-                <div class="project">
-                    <h3>Basic Science Quiz</h3>
-                    <p>This quiz tests users on basic science concepts and gives background into any concepts they may not remember. It's for anyone who's taken even just one intro-level science class. </p>
-                    <p><b>Technologies Used: </b> jQuery, JavaScript, HTML, CSS</p>
-                    <p><b>Why: </b>I made it to help remind people of some of the common concepts you see in every day life. Science literacy is important, and approachable quizzes may be one tiny step towards that!</p>
-                    <p><b>Wireframes: </b>Normally I wireframe in Balsamiq, but for this project, I put together <a href="https://omaiyea.github.io/quiz-app-wireframes/" target="_blank">live HTML wireframes.</a></p>
-                    <p><b>Future Directions: </b>From user testing, for most this quiz was probably too easy. In the future, I'd like to present progressively harder questions, if the user is acing the easier ones, to challenge those with more background.</p>
-                    <div class="screenshots">
-                        <div class="full-size">
-                            <img src="images/quiz-screenshots/start.png" alt="start page screenshot">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="images/quiz-screenshots/start.png" alt="start page screenshot" class="active-thumbnail">
-                            <img src="images/quiz-screenshots/question.png" alt="question page screenshot">
-                            <img src="images/quiz-screenshots/correct-answer.png" alt="correct answer screenshot">
-                            <img src="images/quiz-screenshots/final-score.png" alt="final score screenshot">
-                        </div>
-                    </div>
-                    <div class="links">
-                        <a href="https://omaiyea.github.io/quiz-app/" target="_blank">Live Demo</a>
-                        <p> | </p> <!--investigate doing this with css-->
-                        <a href="https://github.com/omaiyea/quiz-app" target="_blank">Repository</a>
-                    </div>
+<!--
+    <section id="work">
+        <header>
+            <h2>Work Experience & Education</h2>
+        </header>
+
+        <div class="timeline">
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <h3>Product Manager</h3>
+                    <h4>Mitek Systems</h4>
+                    <h5>2019 - Present</h5>        
+                    <p></p>
                 </div>
-                <div class="project">
-                    <h3>What Should I Cook?</h3>
-                    <p>Hungry users can use this app to decide what to eat. If they can't decide what to cook from a limited set of personalized recipes, they're shown restaurants nearby to eat out at instead.</p> 
-                    <p><b>Technologies Used: </b> jQuery, JavaScript, HTML, CSS</p>
-                    <p><b>Research: </b>Most recipe apps have endless scrolling, which is nice for exploring new recipes, but doesn't always help users who are hungry and need to decide on what to cook ASAP. Limiting options may be a way to get to a decision sooner.</p>
-                    <p><b>Wireframes: </b>I also put together <a href="https://github.com/omaiyea/cook-app-wireframes" target="_blank">live HTML wireframes.</a> for this project.</p>
-                    <p><b>Future: </b> Testing... it's on the list! Especially because this app works with several differen APIs. Even during development, sometimes the APIs would change and unexpected data would be returned.</p>
-                    <div class="screenshots">
-                        <div class="full-size">
-                            <img src="images/cook-app-screenshots/start-page.png" alt="start page screenshot">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="images/cook-app-screenshots/start-page.png" alt="start page screenshot" class="active-thumbnail">
-                            <img src="images/cook-app-screenshots/food-preferences.png" alt="food preferences screenshot">
-                            <img src="images/cook-app-screenshots/recipe-page.png" alt="recipe page screenshot">
-                        </div>
-                  </div>               
-                    <p class="project-description"></p>
-                    <div class="links">
-                        <a href="https://omaiyea.github.io/cook-app/" target="_blank">Live Demo</a>
-                        <p> | </p> <!--investigate doing this with css-->
-                        <a href="https://github.com/omaiyea/cook-app" target="_blank">Repository</a>
-                    </div>
+            </div>
+       
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <h3>Program Manager</h3>
+                    <h4>LabKey Software</h4>  
+                    <h5>2015 - 2019</h5>                          
                 </div>
-                <div class="project">
-                    <h3>Noteful</h3>
-                    <p>This app lets users store and manage their notes, which are stored on an external server.</p> 
-                    <p>I wrote it as part of a project to learn React, but I'm happy with how it came out, so I'm including it here too.</p>
-                    <p>Note that some setup is required before doing the live demo! See the README in the repository link.</p>
-                    <p><b>Technologies Used: </b> React.js, Enzyme, HTML, CSS</p>
-                    <div class="screenshots">
-                        <div class="full-size">
-                            <img src="images/noteful-screenshots/notes-view.png" alt="start page screenshot">
-                        </div>
-                        <div class="thumbnail">
-                            <img src="images/noteful-screenshots/notes-view.png" alt="start page screenshot" class="active-thumbnail">
-                            <img src="images/noteful-screenshots/add-folder.png" alt="add folder screenshot">
-                            <img src="images/noteful-screenshots/add-note.png" alt="add note screenshot">
-                            <img src="images/noteful-screenshots/note-details.png" alt="note details screenshot">
-                        </div>
-                    </div>               
-                    <p class="project-description"></p>
-                    <div class="links">
-                        <a href="https://omaiyea.github.io/cook-app/" target="_blank">Live Demo</a>
-                        <p> | </p> <!--investigate doing this with css-->
-                        <a href="https://github.com/omaiyea/cook-app" target="_blank">Repository</a>
-                    </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <h3>MS in Bioinformatics</h3>
+                    <h4>Northeastern University</h4>        
+                    <h5>2013-2015</h5>           
                 </div>
-            </section>
-        </section>
-        <footer>
-            <p>Last Updated: 2019</p>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="js/index.js"></script>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <h3>BA in Chemistry<br>Minor in Computer Science</h3>
+                    <h4>Seattle University</h4>     
+                    <h5>2009-2013</h5>                          
+                </div>
+            </div>
+            <br>
+        </div>
+
+    </section>
+
+    -->
+    <br>
+    <footer>
+        <p>© 2019 Angelica Omaiye</p>
+        <a href="https://www.linkedin.com/in/angelica-omaiye/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/omaiyea" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a href="https://medium.com/@omaiyea" target="_blank"><i class="fab fa-medium"></i></a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+    
     </main>
 </body>
 </html>
